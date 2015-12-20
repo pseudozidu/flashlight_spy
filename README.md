@@ -2,6 +2,9 @@
 Egitim amacli ve android'e ilk adım olarak gelistirdigim.Android ortaminda nelerin yapilabilecegi,nasil yapildigini öğrenmek amacı ile hazırladığım Android spy programı.Bu programın kaynak kodlarını paylaşmamda ki amaç içeresindeki kaynak kodlardan kendi işinize yarayacak bir şeyler bulabilmeniz ve türkçe kaynak oluşturmak. http://stackcuriosity.com/category/android/
 
 
+https://www.youtube.com/watch?v=7zT1l6mF9Gs
+
+
 
 Uygulama Hakkinda:
 
