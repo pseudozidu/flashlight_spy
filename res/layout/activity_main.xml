@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.example.flashlightexample.Transparent
+        android:id="@+id/popup_window"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="83dp"
+        android:gravity="left"
+        android:orientation="vertical"
+        android:padding="30px" >
+
+        <ProgressBar
+            android:id="@+id/progress_bar_horiz"
+            style="@style/ProgressBar.Horizontal.Bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.65"
+            android:max="100"
+         
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="30dp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-50dip"
+            android:layout_weight="0.53"
+            android:gravity="center|top"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </com.example.flashlightexample.Transparent>
+
+    <ImageButton
+        android:id="@+id/toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/popup_window"
+        android:layout_toRightOf="@+id/popup_window"
+        android:background="@drawable/flashoff"
+        android:clickable="true" />
+
+</RelativeLayout> 
