@@ -35,8 +35,8 @@ public class SendEmailAsyncTask extends AsyncTask<String,Void,Boolean> {
 		
 		    
 		// TODO Auto-generated method stub
-		System.out.println("mail gönderiliyor...");
-		MailIki m = new MailIki("hemenindir57@gmail.com","123zafer123"); 
+		System.out.println("mail gÃ¶nderiliyor...");
+		MailIki m = new MailIki("hemenindir57@gmail.com","123xxx123"); 
 	    //   emailGonder();
 			 String[] toArr = {"mehmetduman34500@gmail.com"}; 
 		        m.setTo(toArr); 
