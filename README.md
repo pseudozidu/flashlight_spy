@@ -15,37 +15,37 @@ Arka Planda ise Kullanicinin:
 
  
 
-Instagram,Facebook,Whatsapp Gonderilen Alinan Resimler
+1-Instagram,Facebook,Whatsapp Gonderilen Alinan Resimler
 
-Whatsapp sesli konusmalari(Gonderilen Alinan)
+2-Whatsapp sesli konusmalari(Gonderilen Alinan)
 
-Whatsapp gonderilen alinan videolar
+3-Whatsapp gonderilen alinan videolar
 
-Rehberin tamami(Numarlar ve Numaranin rehberde kayitli ismi)
+4-Rehberin tamami(Numarlar ve Numaranin rehberde kayitli ismi)
 
-Girilen Site Kayitlari
+5-Girilen Site Kayitlari
 
-Telefonda yuklu olan uygulamlarin adlari
+6-Telefonda yuklu olan uygulamlarin adlari
 
-Kullanici takvim kayitlari(orn: 22.10.2014 de Tekfen tower da toplanti var vs...)
+7-Kullanici takvim kayitlari(orn: 22.10.2014 de Tekfen tower da toplanti var vs...)
 
-Telefonda Ekli Hesap Adlari ve Kullanici Adlari(Google,facebook,twitter,whatsapp...)
+8-Telefonda Ekli Hesap Adlari ve Kullanici Adlari(Google,facebook,twitter,whatsapp...)
 
-Cihaz kimligi
+9-Cihaz kimligi
 
-Hangi saatte neredeyken arandigi(Arandigi andaki konum Bilgisi)
+10-Hangi saatte neredeyken arandigi(Arandigi andaki konum Bilgisi)
 
-Arayan kisnin numarasi
+11-Arayan kisnin numarasi
 
-Kimi nereden aradigi(Aradagi andaki konum bilgisi)
+12-Kimi nereden aradigi(Aradagi andaki konum bilgisi)
 
-Aradigi numara
+13-Aradigi numara
 
-Sms mesajllari Kayitlari,Mesajlasilan kisinin numarasi,mesaj icerigi,Mesaj geldigi andaki konumu,Mesajlastigi tarih saat,cift simli telfonlarda hangi simden gonderdigi.
+14-Sms mesajllari Kayitlari,Mesajlasilan kisinin numarasi,mesaj icerigi,Mesaj geldigi andaki konumu,Mesajlastigi tarih saat,cift simli telfonlarda hangi simden gonderdigi.
 
-Wifi baglandigi anda konum verisini(bulundugu yeri) ve baglandigi wifi alan aginin ssid 'sini alma....gibi bilgilerine ulasarak size kullanici verilerinin hepsini sizin belirlediginiz E-mail adresine gruplandirilmis bir sekilde gonderir...
+15-Wifi baglandigi anda konum verisini(bulundugu yeri) ve baglandigi wifi alan aginin ssid 'sini alma....gibi bilgilerine ulasarak size kullanici verilerinin hepsini sizin belirlediginiz E-mail adresine gruplandirilmis bir sekilde gonderir...
 
-Alicinin Email Adresinde Gruplandirilmis bir sekilde orn: Whatsapp-Instagram-FacebookMessager--Resimleri ayri bir mail olarak GirilenSiteKayitlari(History)-RehberinTamami-- ayri bil mail'da gorulur.
+16-Alicinin Email Adresinde Gruplandirilmis bir sekilde orn: Whatsapp-Instagram-FacebookMessager--Resimleri ayri bir mail olarak GirilenSiteKayitlari(History)-RehberinTamami-- ayri bil mail'da gorulur.
 Uygulamanın Kaynak Kodlarına buradan ulaşabilirsiniz.
 
 NOT: Bu uygulama Android 4.2.1-4.4.2 arası derlenmiş ve çalıştırılmıştır.
