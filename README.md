@@ -1,3 +1,110 @@
+
+#********************************-------------ENGLISH-------------********************************
+# flashlight_spy
+Android FlashLight Looking Spy Program for Education
+
+I improved that program for education. I wanted to show what can we do on Android, how
+
+can we do and my first step about Android application which one I improved that one with
+
+open sides of Android.
+
+ 
+
+ 
+How did I make that?
+
+When I went to Java-Android course our teacher showed us how can we look sent
+
+message and write that message and sender's number to logcat. And that app make idea
+
+in my mind I can apps like that. When I was starting write program like that type, at this
+
+time I got that app. Actually I started to Android with that app. It developed me when I did
+
+that, cause of I looked a lot of problem and I tried solve that problems. I chose that app for
+
+I wasn't new at this field and I couldn't left that app. Cause of it is my interest area.
+
+
+
+About this app:
+
+I chose that interface for no one can understand what is it. That's why I wanted Flash
+
+Light. You can change and hide in better apps. It works like facebook messenger overlay,
+
+so you can move that on screen where you want, You can acces app from here or that link
+
+ 
+
+ 
+If you want original Flah Light app, you can dowload from that Google Play link:
+
+https://play.google.com/store/apps/details?id=com.stackcuriosity.flashlight&hl=tr
+
+
+
+You can acces in background:(All of that are sent by mail to your mail adress)
+
+1. Received photos from Instagram, Facebook, Whatsapp
+
+2. Sent and Received sound messages from Whatsapp
+
+3. Sent and Received videos from Whatsapp
+
+4. All contacts(Numbers and Names)
+
+5. All entered in sites
+
+6. All apps name which installed in telephone
+
+7. All calendar notes
+
+8. All account names and user names
+
+9. Device ID
+
+10. When person was called(And location info)
+
+11. Caller name
+
+12. SMS info(Sender number, personal info, inside of message, location info when receive
+
+SMS, SMS date, Sim info at Dual-Sim phones)
+
+13. Location info when connect wi-fi and get wi-fi ssid info
+
+
+
+You can acces source code from here:
+
+https://github.com/SpyFlashLight/flashlight_spy
+
+
+
+Note: That app compile on Eclipse for Android 4.2.1-4.4.2(And got good results)
+
+Please use that page for rate and question for everyone
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+********************************-------------TURKÇE-------------********************************
+
+
 # flashlight_spy
 Egitim amacli ve android'e ilk adım olarak gelistirdigim.Android ortaminda nelerin yapilabilecegi,nasil yapildigini öğrenmek amacı ile hazırladığım Android spy programı.Bu programın kaynak kodlarını paylaşmamda ki amaç içeresindeki kaynak kodlardan kendi işinize yarayacak bir şeyler bulabilmeniz ve türkçe kaynak oluşturmak. http://stackcuriosity.com/category/android/
 
