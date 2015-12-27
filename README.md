@@ -26,7 +26,6 @@ that, cause of I looked a lot of problem and I tried solve that problems. I chos
 
 I wasn't new at this field and I couldn't left that app. Cause of it is my interest area.
 
-http://stackcuriosity.com/wp-content/uploads/2014/10/Screenshot_2014-09-23-20-11-522.png
 
 #About this app:
 
