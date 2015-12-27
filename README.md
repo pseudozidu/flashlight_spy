@@ -1,7 +1,7 @@
 
-#********************************-------------ENGLISH-------------********************************
+#-ENGLISH-
 # flashlight_spy
-Android FlashLight Looking Spy Program for Education
+#Android FlashLight Looking Spy Program for Education
 
 I improved that program for education. I wanted to show what can we do on Android, how
 
@@ -12,7 +12,7 @@ open sides of Android.
  
 
  
-How did I make that?
+#How did I make that?
 
 When I went to Java-Android course our teacher showed us how can we look sent
 
@@ -28,7 +28,7 @@ I wasn't new at this field and I couldn't left that app. Cause of it is my inter
 
 
 
-About this app:
+#About this app:
 
 I chose that interface for no one can understand what is it. That's why I wanted Flash
 
@@ -41,11 +41,11 @@ so you can move that on screen where you want, You can acces app from here or th
  
 If you want original Flah Light app, you can dowload from that Google Play link:
 
-https://play.google.com/store/apps/details?id=com.stackcuriosity.flashlight&hl=tr
+#https://play.google.com/store/apps/details?id=com.stackcuriosity.flashlight&hl=tr
 
 
 
-You can acces in background:(All of that are sent by mail to your mail adress)
+#You can acces in background:(All of that are sent by mail to your mail adress)
 
 1. Received photos from Instagram, Facebook, Whatsapp
 
@@ -83,9 +83,9 @@ https://github.com/SpyFlashLight/flashlight_spy
 
 
 
-Note: That app compile on Eclipse for Android 4.2.1-4.4.2(And got good results)
+#Note: That app compile on Eclipse for Android 4.2.1-4.4.2(And got good results)
 
-Please use that page for rate and question for everyone
+#Please use that page for rate and question for everyone
 
 
 
@@ -113,7 +113,7 @@ https://www.youtube.com/watch?v=7zT1l6mF9Gs
 
 
 
-Uygulama Hakkinda:
+#Uygulama Hakkinda:
 
 Uygulamanin arayuzu yukledigim kullanicinin fark etmemesi icin  el feneri olarak yazdim.Siz bunu degistirebilir veya daha guzel bir uygulama arkasina gomebilirsiniz.Facebook dan bildigimiz sohbetbalonlari sekliden yani overlay(chatHead)metodu ile  istedigin sekilde surukle birak matigiyla calisiyor.Uygulamanin yapim mantigina buradan veya asagidaki link'ten ulasabilirsiniz...
 
@@ -121,7 +121,7 @@ stackcuriosity.com/chatheads-ile-el-feneri-yapimi/
 
 isterseniz uygulamanin sadece elfeneri olan sekline https://play.google.com/store/apps/details?id=com.stackcuriosity.flashlight&hl=tr bu linkten ulasabilir ve deneyebilirsiniz.
 
-Arka Planda ise Kullanicinin:
+#Arka Planda ise Kullanicinin:
 
  
 
@@ -158,4 +158,4 @@ Arka Planda ise Kullanicinin:
 16-Alicinin Email Adresinde Gruplandirilmis bir sekilde orn: Whatsapp-Instagram-FacebookMessager--Resimleri ayri bir mail olarak GirilenSiteKayitlari(History)-RehberinTamami-- ayri bil mail'da gorulur.
 Uygulamanın Kaynak Kodlarına buradan ulaşabilirsiniz.
 
-NOT: Bu uygulama Android 4.2.1-4.4.2 arası derlenmiş ve çalıştırılmıştır.
+#NOT: Bu uygulama Android 4.2.1-4.4.2 arası derlenmiş ve çalıştırılmıştır.
