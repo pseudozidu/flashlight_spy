@@ -102,7 +102,7 @@ https://github.com/SpyFlashLight/flashlight_spy
 
 
 
-********************************-------------TURKÇE-------------********************************
+#*-TURKÇE-*#
 
 
 # flashlight_spy
