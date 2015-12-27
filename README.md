@@ -53,21 +53,21 @@ If you want original Flah Light app, you can dowload from that Google Play link:
 
 3. Sent and Received videos from Whatsapp
 
-4. All contacts(Numbers and Names)
+4. All contacts(Numbers and Name in the Book of numbers)
 
 5. All entered in sites
 
 6. All apps name which installed in telephone
 
-7. All calendar notes
+7. All calendar notes (eg. Tekfen Tower 22.12.2016 meeting.)
 
-8. All account names and user names
+8. All account names and user names (Google,facebook,twitter,whatsapp...)
 
 9. Device ID
 
 10. When person was called(And location info)
 
-11. Caller name
+11. Caller name and  dialed number's name  in Contacts  
 
 12. SMS info(Sender number, personal info, inside of message, location info when receive
 
